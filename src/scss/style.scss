@@ -1,2 +1,43 @@
-@use '@material/button/mdc-button';
-@use '@material/button';
+// material.io implementation
+
+// @use "@material/icon-button";
+@use "@material/theme";
+@use "@material/theme/custom-properties";
+@use "@material/list";
+@use "@material/drawer";
+@use "@material/button/mdc-button";
+@use "@material/button";
+@use "@material/icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+
+// @use "@material/top-app-bar/mdc-top-app-bar";
+// @import "@material/top-app-bar/mdc-top-app-bar";
+
+// @include top-app-bar.icon-ink-color(red);
+// @include mdc-top-app-bar-fill-color(#dadce0);
+// @include top-app-bar-fill-color(#dadce0);
+// @include MDCTopAppBar.fill-color(#dadce0);
+
+// .mdc-theme--primary {
+// 	@include theme.property(color, custom-properties.create(primary, red));
+// }
+@include drawer.core-styles;
+@include drawer.dismissible-core-styles;
+@include drawer.modal-core-styles;
+@include list.core-styles;
+@include icon-button.core-styles;
+// @include icon-button.core-styles;
+
+// Custom styles
+@import "cimtops-theme";
+
+// Custom breakpoints
+@import "breakpoints";
+
+// MDC Component style overrides
+@import "component-overrides";
+
+body {
+	display: flex;
+	height: 100vh;
+}
