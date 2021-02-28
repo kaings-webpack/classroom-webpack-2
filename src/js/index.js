@@ -39,6 +39,9 @@ const ripple = new MDCRipple(document.querySelector(".mdc-button"));
 // topAppBar.listen("MDCTopAppBar:nav", () => {
 // 	drawer.open = !drawer.open;
 // });
+import { MDCIconButtonToggle } from "@material/icon-button";
+// const iconToggle = new MDCIconButtonToggle(document.querySelector(".mdc-icon-button"));add-to-favorites
+const iconToggle = new MDCIconButtonToggle(document.querySelector("#add-to-favorites"));
 
 import { MDCDrawer } from "@material/drawer";
 const drawer = MDCDrawer.attachTo(document.querySelector(".mdc-drawer"));

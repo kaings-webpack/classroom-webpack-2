@@ -8,8 +8,37 @@
 	position: absolute; // displays right app-bar icons
 }
 
+.mdc-top-app-bar__row {
+	border-bottom: 1px solid var(--divider-color);
+}
+
 @media only screen and (min-width: 960px) {
 	.mdc-top-app-bar__navigation-icon {
 		display: none;
+	}
+}
+
+
+// Note: Unofficial way (technical debt)
+// Goal: to have a ripple background(transparent) on the info button when active
+$icon-size: 24px;
+$adjustment: 16px;
+$offset: calc(#{-$adjustment} / 2);
+$size: calc(#{$icon-size} + #{$adjustment});
+
+.mdc-icon-button__icon--on {
+	position: relative;
+	
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: $offset;
+		left: $offset;
+		width: $size;
+		height: $size;
+		background: var(--cimtops-theme-primary);
+		border-radius: 50%;
+		opacity: 0.2;
 	}
 }
