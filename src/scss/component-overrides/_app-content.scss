@@ -7,3 +7,10 @@
 	overflow: auto;
 	height: 100%;
 }
+
+
+.cim-content-area {
+	height: calc(100vh - 64px);
+	width: calc(100% - 380px);
+	overflow-y: scroll;
+}

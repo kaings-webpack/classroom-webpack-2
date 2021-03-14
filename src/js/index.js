@@ -5,6 +5,8 @@ import page from "../page.html";
 // default scs styles
 import css from "../scss/style.scss";
 
+// import bgtest from "../images/Resting.png";
+
 // // material.io js code goes here
 import { MDCRipple } from "@material/ripple/index";
 const ripple = new MDCRipple(document.querySelector(".mdc-button"));
