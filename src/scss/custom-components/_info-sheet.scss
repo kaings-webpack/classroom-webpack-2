@@ -1,0 +1,108 @@
+// @see https://material.io/components/sheets-side
+
+// There is no implementation guidance for web.
+
+.cim-info-sheet {
+	height: calc(100vh - 64px);
+	width: 330px;
+	display: block;
+	// background-color: red;
+	// background-image: url("../img/Resting.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	position: absolute;
+	right: 0px;
+	border-left: 1px solid var(--divider-color);
+}
+
+.cim-info-sheet--header {
+	display: flex;
+	background: rgba(255, 255, 255, 0.5);
+	padding: 24px 24px 16px;
+	border-bottom: 1px solid var(--divider-color);
+}
+
+.cim-info-sheet--header-icon {
+	margin-top: 4px;
+	margin-right: 18px;
+}
+
+.cim-info-sheet--header-title {
+	margin: 0;
+	padding-top: 2px;
+	line-height: 27px;
+	letter-spacing: -0.32px;
+	align-self: stretch;
+	flex: 1;
+}
+
+.cim-info-sheet--header-closeBtn {
+	min-width: 24px;
+	display: block;
+	height: 24px;
+	margin: 4px 0 0 18px;
+	padding: 0;
+	border: 0;
+	flex: 0 0 24px;
+
+	.cim-info-sheet--header-closeBtn-icon {
+		margin-right: 0;
+		height: 24px;
+		width: 24px;
+		font-size: 24px;
+	}
+}
+
+.cim-info-sheet--body {
+	overflow-y: scroll;
+	height: calc(100vh - 161px);
+}
+
+.cim-info-sheet--image {
+	display: flex;
+	height: 212px;
+	border-bottom: 1px solid var(--divider-color);
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+// Section: Actions
+
+.cim-info-sheet--action {
+	padding: 10px;
+	// background: red;
+	border-bottom: 1px solid var(--divider-color);
+}
+
+// Section: Information
+
+.cim-info-sheet--info {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 24px 48px;
+	letter-spacing: 0;
+}
+
+.cim-info-sheet--info-row {
+	display: flex;
+	line-height: 20px;
+	padding: 6px 0;
+	align-items: center;
+}
+
+.cim-info-sheet--info-row-label {
+	color: var(--mdc-theme-text-secondary-on-light);
+	flex: 0 0 100px;
+}
+
+.cim-info-sheet--info-row-value {
+	display: flex;
+	align-items: center;
+}
+
+.cim-info-sheet--info-row-icon {
+	margin: 0 4px 0 -4px;
+}

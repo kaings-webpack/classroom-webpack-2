@@ -10,6 +10,8 @@
 @use "@material/icon-button";
 @use "@material/top-app-bar/mdc-top-app-bar";
 
+@use "@material/typography/mdc-typography";
+
 // @use "@material/top-app-bar/mdc-top-app-bar";
 // @import "@material/top-app-bar/mdc-top-app-bar";
 
@@ -36,6 +38,9 @@
 
 // MDC Component style overrides
 @import "component-overrides";
+
+// Custom Components
+@import "custom-components";
 
 body {
 	display: flex;
