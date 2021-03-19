@@ -9,7 +9,7 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "js/script.js",
-		// publicPath: "/",
+		publicPath: "/",
 	},
 	devServer: {
 		contentBase: path.resolve(__dirname, "dist"),
@@ -17,7 +17,7 @@ module.exports = {
 		port: 9000,
 		overlay: true,
 		watchContentBase: true,
-		open: true,
+		open: false,
 	},
 	module: {
 		rules: [
@@ -27,7 +27,7 @@ module.exports = {
 					{
 						loader: "file-loader",
 						options: {
-							name: "../images/[name].[ext]",
+							name: "images/[name].[ext]",
 						},
 					},
 				],
@@ -62,22 +62,6 @@ module.exports = {
 				use: [
 					{
 						loader: "html-loader",
-						options: {
-							attributes: {
-								list: [
-									{
-										tag: "img",
-										attribute: "data-src",
-										type: "src",
-									},
-									{
-										tag: "img",
-										attribute: "data-srcset",
-										type: "srcset",
-									},
-								],
-							},
-						},
 					},
 				],
 			},
