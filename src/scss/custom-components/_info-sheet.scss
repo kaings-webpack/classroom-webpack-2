@@ -1,13 +1,12 @@
 // @see https://material.io/components/sheets-side
 
 // There is no implementation guidance for web.
+@use "../variables";
 
 .cim-info-sheet {
 	height: calc(100vh - 64px);
-	width: 330px;
+	width: variables.$infoSheet-width;
 	display: block;
-	// background-color: red;
-	// background-image: url("../img/Resting.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	position: absolute;
@@ -54,7 +53,7 @@
 }
 
 .cim-info-sheet--body {
-	overflow-y: scroll;
+	overflow-y: auto;
 	height: calc(100vh - 161px);
 }
 
@@ -70,10 +69,8 @@
 }
 
 // Section: Actions
-
 .cim-info-sheet--action {
 	padding: 10px;
-	// background: red;
 	border-bottom: 1px solid var(--divider-color);
 }
 
