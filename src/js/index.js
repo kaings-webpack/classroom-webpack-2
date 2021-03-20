@@ -11,9 +11,14 @@ import css from "../scss/style.scss";
 import { MDCRipple } from "@material/ripple/index";
 const ripple = new MDCRipple(document.querySelector(".mdc-button"));
 //
-// import { MDCList } from "@material/list";
-// const list = MDCList.attachTo(document.querySelector(".mdc-list"));
-// list.wrapFocus = true;
+import { MDCList } from "@material/list";
+const list = MDCList.attachTo(document.querySelector(".mdc-list"));
+list.wrapFocus = true;
+
+const listItemRipples = list.listElements.map((listItemEl) => new MDCRipple(listItemEl));
+
+import { MDCDataTable } from "@material/data-table";
+const dataTable = new MDCDataTable(document.querySelector(".mdc-data-table"));
 //
 // import { MDCDrawer } from "@material/drawer";
 // const drawer = MDCDrawer.attachTo(document.querySelector(".mdc-drawer"));
@@ -79,6 +84,19 @@ var getBreakpoint = function () {
 	return window.getComputedStyle(document.body, ":before").content.replace(/\"/g, "");
 };
 
+// var getTableWidth = function () {
+// 	return window.getComputedStyle(document.body, ":before").content.replace(/\"/g, "");
+// };
+// cim-table-flex
+// var table = document.querySelector(".cim-table-flex");
+// var tableWidth = table.clientWidth;
+
+// var table = document.getElementsByClassName("popup")[0];
+// var tableWidth = window.getComputedStyle(table).width;
+var tableWidth;
+var getTableWidth = function () {
+	return window.getComputedStyle(document.getElementsByClassName("cim-table-schedule")[0]).width;
+};
 // Calculate breakpoint on page load
 breakpoint = getBreakpoint();
 if (breakpoint === "xsmall" || breakpoint === "small" || breakpoint === "medium") {
@@ -90,6 +108,33 @@ if (breakpoint === "xsmall" || breakpoint === "small" || breakpoint === "medium"
 		console.log("Has modal classs");
 		navigationDrawer[0].classList.remove("mdc-drawer--modal");
 	}
+}
+
+tableWidth = getTableWidth();
+if (tableWidth <= "600px") {
+	if (document.getElementsByClassName("cim-table-schedule")[0].classList.contains("regular")) {
+		document.getElementsByClassName("cim-table-schedule")[0].classList.remove("regular");
+	}
+	if (document.getElementsByClassName("cim-table-schedule")[0].classList.contains("large")) {
+		document.getElementsByClassName("cim-table-schedule")[0].classList.remove("large");
+	}
+	document.getElementsByClassName("cim-table-schedule")[0].classList.add("small");
+} else if (tableWidth <= "768px") {
+	if (document.getElementsByClassName("cim-table-schedule")[0].classList.contains("small")) {
+		document.getElementsByClassName("cim-table-schedule")[0].classList.remove("small");
+	}
+	if (document.getElementsByClassName("cim-table-schedule")[0].classList.contains("large")) {
+		document.getElementsByClassName("cim-table-schedule")[0].classList.remove("large");
+	}
+	document.getElementsByClassName("cim-table-schedule")[0].classList.add("regular");
+} else if (tableWidth > "768px") {
+	if (document.getElementsByClassName("cim-table-schedule")[0].classList.contains("small")) {
+		document.getElementsByClassName("cim-table-schedule")[0].classList.remove("small");
+	}
+	if (document.getElementsByClassName("cim-table-schedule")[0].classList.contains("regular")) {
+		document.getElementsByClassName("cim-table-schedule")[0].classList.remove("regular");
+	}
+	document.getElementsByClassName("cim-table-schedule")[0].classList.add("large");
 }
 
 // Recalculate breakpoint on resize
@@ -107,6 +152,33 @@ window.addEventListener(
 				console.log("Has modal classs");
 				navigationDrawer[0].classList.remove("mdc-drawer--modal");
 			}
+		}
+
+		tableWidth = getTableWidth();
+		if (tableWidth <= "600px") {
+			if (document.getElementsByClassName("cim-table-schedule")[0].classList.contains("regular")) {
+				document.getElementsByClassName("cim-table-schedule")[0].classList.remove("regular");
+			}
+			if (document.getElementsByClassName("cim-table-schedule")[0].classList.contains("large")) {
+				document.getElementsByClassName("cim-table-schedule")[0].classList.remove("large");
+			}
+			document.getElementsByClassName("cim-table-schedule")[0].classList.add("small");
+		} else if (tableWidth <= "768px") {
+			if (document.getElementsByClassName("cim-table-schedule")[0].classList.contains("small")) {
+				document.getElementsByClassName("cim-table-schedule")[0].classList.remove("small");
+			}
+			if (document.getElementsByClassName("cim-table-schedule")[0].classList.contains("large")) {
+				document.getElementsByClassName("cim-table-schedule")[0].classList.remove("large");
+			}
+			document.getElementsByClassName("cim-table-schedule")[0].classList.add("regular");
+		} else if (tableWidth > "768px") {
+			if (document.getElementsByClassName("cim-table-schedule")[0].classList.contains("small")) {
+				document.getElementsByClassName("cim-table-schedule")[0].classList.remove("small");
+			}
+			if (document.getElementsByClassName("cim-table-schedule")[0].classList.contains("regular")) {
+				document.getElementsByClassName("cim-table-schedule")[0].classList.remove("regular");
+			}
+			document.getElementsByClassName("cim-table-schedule")[0].classList.add("large");
 		}
 	},
 	false

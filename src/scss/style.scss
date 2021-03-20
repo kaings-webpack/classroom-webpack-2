@@ -9,7 +9,9 @@
 @use "@material/button";
 @use "@material/icon-button";
 @use "@material/top-app-bar/mdc-top-app-bar";
-
+@use "@material/checkbox"; // Required only for data table with row selection.
+// @use "@material/icon-button"; // Required only for data table with column sorting.
+@use "@material/data-table/data-table";
 @use "@material/typography/mdc-typography";
 
 // @use "@material/top-app-bar/mdc-top-app-bar";
@@ -28,6 +30,11 @@
 @include drawer.modal-core-styles;
 @include list.core-styles;
 @include icon-button.core-styles;
+
+@include checkbox.core-styles;
+@include icon-button.core-styles;
+@include data-table.core-styles;
+@include data-table.theme-baseline;
 // @include icon-button.core-styles;
 
 // Custom styles

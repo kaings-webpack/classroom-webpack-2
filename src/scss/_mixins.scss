@@ -1,0 +1,35 @@
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 2, $bgColor: white) {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	line-height: $lineHeight;
+	max-height: $lineHeight * $lineCount;
+	text-align: left;
+	margin-right: -1em;
+	padding-right: 1em;
+	word-break: break-all;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+
+	// overflow: hidden;
+	// text-overflow: ellipsis;
+	// text-overflow: ellipsis;
+	&:before {
+		content: "...";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		right: 0;
+		width: 1em;
+		height: 1em;
+		margin-top: 0.2em;
+		background: $bgColor;
+	}
+}

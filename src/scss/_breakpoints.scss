@@ -9,7 +9,7 @@ body:before {
 	visibility: hidden;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 600px) {
 	body:before {
 		content: "small";
 	}

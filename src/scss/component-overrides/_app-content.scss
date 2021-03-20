@@ -1,3 +1,5 @@
+@use "../variables";
+
 .mdc-drawer-app-content {
 	flex: auto;
 	overflow: auto;
@@ -8,9 +10,11 @@
 	height: 100%;
 }
 
-
 .cim-content-area {
-	height: calc(100vh - 64px);
-	width: calc(100% - 380px);
-	overflow-y: scroll;
+	height: calc(100vh - #{variables.$appBar-height});
+	width: calc(100% - #{variables.$infoSheet-width + 1});
+	overflow-y: auto; // for testing, remove when deployment
+	background-image: url("../img/ListSection.png");
+	// padding: 0 16px;
+	// box-sizing: border-box;
 }
