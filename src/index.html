@@ -10,121 +10,51 @@
 	</head>
 
 	<body class="mdc-typography">
-		<!-- <aside class="mdc-drawer mdc-drawer--dismissible">
-			<div class="mdc-drawer__content">
-				<div class="mdc-list">
-					<a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
-						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
-						<span class="mdc-list-item__text">Inbox</span>
-					</a>
-					<a class="mdc-list-item" href="#">
-						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
-						<span class="mdc-list-item__text">Outgoing</span>
-					</a>
-					<a class="mdc-list-item" href="#">
-						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
-					</a>
-				</div>
-			</div>
-		</aside> -->
 		<aside class="mdc-drawer mdc-drawer--modal" id="navDrawer">
+			<div class="mdc-drawer__header">
+				<h3 class="mdc-drawer__title">Mail</h3>
+				<h6 class="mdc-drawer__subtitle">email@material.io</h6>
+			</div>
+			<button class="mdc-fab mdc-fab--extended">
+				<div class="mdc-fab__ripple"></div>
+				<span class="material-icons mdc-fab__icon">add</span>
+				<span class="mdc-fab__label">Create</span>
+			</button>
 			<div class="mdc-drawer__content">
 				<nav class="mdc-list">
 					<a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page" tabindex="0">
 						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
-						<span class="mdc-list-item__text">Inbox</span>
+						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">event_note</i>
+						<span class="mdc-list-item__text">Schedule</span>
 					</a>
-					<div class="mdc-list-divider"></div>
+					<div class="mdc-list-divider mdc-list-divider--padded"></div>
 					<!-- <div class="mdc-menu-divider"></div> -->
 					<a class="mdc-list-item" href="#">
 						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
-						<span class="mdc-list-item__text">Outgoing</span>
+						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">all_inbox</i>
+						<span class="mdc-list-item__text">All</span>
+						<span class="mdc-list-item__meta">01</span>
 					</a>
 					<a class="mdc-list-item" href="#">
 						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
+						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">description</i>
+						<span class="mdc-list-item__text">Before input</span>
 					</a>
 					<a class="mdc-list-item" href="#">
 						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
+						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">edit</i>
+						<span class="mdc-list-item__text">Editing</span>
 					</a>
 					<a class="mdc-list-item" href="#">
 						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
+						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">check_circle</i>
+						<span class="mdc-list-item__text">Complete</span>
 					</a>
+					<div class="mdc-list-divider"></div>
 					<a class="mdc-list-item" href="#">
 						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
-					</a>
-					<a class="mdc-list-item" href="#">
-						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
-					</a>
-					<a class="mdc-list-item" href="#">
-						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
-					</a>
-					<a class="mdc-list-item" href="#">
-						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
-					</a>
-					<a class="mdc-list-item" href="#">
-						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
-					</a>
-					<a class="mdc-list-item" href="#">
-						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
-					</a>
-					<a class="mdc-list-item" href="#">
-						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
-					</a>
-					<a class="mdc-list-item" href="#">
-						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
-					</a>
-					<a class="mdc-list-item" href="#">
-						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
-					</a>
-					<a class="mdc-list-item" href="#">
-						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
-					</a>
-					<a class="mdc-list-item" href="#">
-						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
-					</a>
-					<a class="mdc-list-item" href="#">
-						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
-					</a>
-					<a class="mdc-list-item" href="#">
-						<span class="mdc-list-item__ripple"></span>
-						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-						<span class="mdc-list-item__text">Drafts</span>
+						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">library_books</i>
+						<span class="mdc-list-item__text">Library</span>
 					</a>
 				</nav>
 			</div>
@@ -202,60 +132,58 @@
 					</div>
 
 					<div class="cim-content-area">
-						
-							<div class="cim-carousel-header">Today (21 February 2021)</div>
+						<div class="cim-carousel-header">Today (21 February 2021)</div>
 						<div class="cim-carousel-container">
 							<ul class="cim-carousel-today">
 								<li class="cim-carousel-today__item">
 									<div class="cim-carousel-today__item-img-container">
-										<img src="img/Page-1.jpg" alt="Page Thumbnail" />	
+										<img src="img/Page-1.jpg" alt="Page Thumbnail" />
 									</div>
 									<div class="cim-carousel-today__item-text">
 										<div class="cim-carousel-today__item-text-primary mdc-typography--caption"><span>106</span> - Store inspection report</div>
 										<div class="cim-carousel-today__item-text-secondary">8:30AM</div>
 									</div>
 								</li>
-								
+
 								<li class="cim-carousel-today__item selected">
 									<div class="cim-carousel-today__item-img-container">
-										<img src="img/Page-1.jpg" alt="Page Thumbnail" />	
+										<img src="img/Page-1.jpg" alt="Page Thumbnail" />
 									</div>
 									<div class="cim-carousel-today__item-text">
 										<div class="cim-carousel-today__item-text-primary mdc-typography--caption"><span>106</span> - Store inspection report</div>
 										<div class="cim-carousel-today__item-text-secondary">8:30AM</div>
 									</div>
 								</li>
-								
+
 								<li class="cim-carousel-today__item">
 									<div class="cim-carousel-today__item-img-container">
-										<img src="img/Page-1.jpg" alt="Page Thumbnail" />	
+										<img src="img/Page-1.jpg" alt="Page Thumbnail" />
 									</div>
 									<div class="cim-carousel-today__item-text">
 										<div class="cim-carousel-today__item-text-primary mdc-typography--caption"><span>106</span> - Store inspection report</div>
 										<div class="cim-carousel-today__item-text-secondary">8:30AM</div>
 									</div>
 								</li>
-								
+
 								<li class="cim-carousel-today__item">
 									<div class="cim-carousel-today__item-img-container">
-										<img src="img/Page-1.jpg" alt="Page Thumbnail" />	
+										<img src="img/Page-1.jpg" alt="Page Thumbnail" />
 									</div>
 									<div class="cim-carousel-today__item-text">
 										<div class="cim-carousel-today__item-text-primary mdc-typography--caption"><span>106</span> - Store inspection report</div>
 										<div class="cim-carousel-today__item-text-secondary">8:30AM</div>
 									</div>
 								</li>
-								
+
 								<li class="cim-carousel-today__item">
 									<div class="cim-carousel-today__item-img-container">
-										<img src="img/Page-1.jpg" alt="Page Thumbnail" />	
+										<img src="img/Page-1.jpg" alt="Page Thumbnail" />
 									</div>
 									<div class="cim-carousel-today__item-text">
 										<div class="cim-carousel-today__item-text-primary mdc-typography--caption"><span>106</span> - Store inspection report</div>
 										<div class="cim-carousel-today__item-text-secondary">8:30AM</div>
 									</div>
 								</li>
-								
 							</ul>
 						</div>
 
@@ -307,7 +235,7 @@
 								</table>
 							</div>
 						</div>
-
+					</div>
 				</div>
 			</main>
 		</div>

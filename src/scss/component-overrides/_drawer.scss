@@ -1,3 +1,28 @@
-.mdc-list-item__text {
-	color: var(--cimtops-theme-primary);
+// @use "@material/drawer";
+// @use "@material/list";
+
+@import "../cimtops-theme";
+// @import "@material/fab/mdc-fab.scss";
+// @include fab.core-styles;
+
+.mdc-drawer {
+	.mdc-list-item--activated {
+		.mdc-list-item__text,
+		.mdc-list-item__graphic {
+			color: var(--cimtops-theme-primary);
+		}
+	}
 }
+
+.mdc-drawer .mdc-list-divider {
+	margin: 3px auto 4px;
+}
+.mdc-list-divider--padded {
+	width: calc(100% - 16px);
+}
+
+// @include drawer.divider-color(red);
+// @include drawer.item-text-ink-color(var(--mdc-theme-text-secondary-on-light));
+// @include drawer.item-icon-ink-color(var(--mdc-theme-text-secondary-on-light));
+// @include drawer.item-activated-icon-ink-color(var(--mdc-theme-primary));
+// @include drawer.item-activated-text-ink-color(var(--mdc-theme-primary));

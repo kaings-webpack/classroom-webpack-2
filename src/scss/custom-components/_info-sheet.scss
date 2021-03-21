@@ -1,11 +1,11 @@
 // @see https://material.io/components/sheets-side
 
 // There is no implementation guidance for web.
-@use "../variables";
+@use "../cimtops-variables";
 
 .cim-info-sheet {
 	height: calc(100vh - 64px);
-	width: variables.$infoSheet-width;
+	width: cimtops-variables.$infoSheet-width;
 	display: block;
 	background-repeat: no-repeat;
 	background-position: 0 0;

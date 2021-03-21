@@ -1,4 +1,4 @@
-@use "../variables";
+@use "../cimtops-variables";
 
 .mdc-drawer-app-content {
 	flex: auto;
@@ -11,8 +11,8 @@
 }
 
 .cim-content-area {
-	height: calc(100vh - #{variables.$appBar-height});
-	width: calc(100% - #{variables.$infoSheet-width + 1});
+	height: calc(100vh - #{cimtops-variables.$appBar-height});
+	width: calc(100% - #{cimtops-variables.$infoSheet-width + 1});
 	overflow-y: auto; // for testing, remove when deployment
 	// background-image: url("../img/ListSection.png");
 }

@@ -1,5 +1,5 @@
-@use "../variables";
-@use "../mixins";
+@use "../cimtops-variables";
+@use "../cimtops-mixins";
 
 .mdc-data-table {
 	width: 100%;
@@ -10,7 +10,7 @@
 }
 
 .cim-table-flex {
-	max-height: calc(100vh - #{variables.$appBar-height});
+	max-height: calc(100vh - #{cimtops-variables.$appBar-height});
 
 	.mdc-data-table__table-container {
 		display: flex;

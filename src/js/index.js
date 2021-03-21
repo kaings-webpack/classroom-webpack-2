@@ -19,6 +19,9 @@ const listItemRipples = list.listElements.map((listItemEl) => new MDCRipple(list
 
 import { MDCDataTable } from "@material/data-table";
 const dataTable = new MDCDataTable(document.querySelector(".mdc-data-table"));
+
+// import { MDCRippleFab } from "@material/ripple";
+// const fabRipple = new MDCRippleFab(document.querySelector(".mdc-fab"));
 //
 // import { MDCDrawer } from "@material/drawer";
 // const drawer = MDCDrawer.attachTo(document.querySelector(".mdc-drawer"));

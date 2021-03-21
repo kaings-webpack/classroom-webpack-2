@@ -13,29 +13,18 @@
 // @use "@material/icon-button"; // Required only for data table with column sorting.
 @use "@material/data-table/data-table";
 @use "@material/typography/mdc-typography";
+@use "@material/fab";
 
-// @use "@material/top-app-bar/mdc-top-app-bar";
-// @import "@material/top-app-bar/mdc-top-app-bar";
-
-// @include top-app-bar.icon-ink-color(red);
-// @include mdc-top-app-bar-fill-color(#dadce0);
-// @include top-app-bar-fill-color(#dadce0);
-// @include MDCTopAppBar.fill-color(#dadce0);
-
-// .mdc-theme--primary {
-// 	@include theme.property(color, custom-properties.create(primary, red));
-// }
 @include drawer.core-styles;
 @include drawer.dismissible-core-styles;
 @include drawer.modal-core-styles;
 @include list.core-styles;
 @include icon-button.core-styles;
-
 @include checkbox.core-styles;
-@include icon-button.core-styles;
+@include button.core-styles;
 @include data-table.core-styles;
 @include data-table.theme-baseline;
-// @include icon-button.core-styles;
+// @include fab.core-styles; // I can't make this work
 
 // Custom styles
 @import "cimtops-theme";
