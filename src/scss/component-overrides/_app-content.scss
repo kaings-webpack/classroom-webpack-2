@@ -14,5 +14,5 @@
 	height: calc(100vh - #{variables.$appBar-height});
 	width: calc(100% - #{variables.$infoSheet-width + 1});
 	overflow-y: auto; // for testing, remove when deployment
-	background-image: url("../img/ListSection.png");
+	// background-image: url("../img/ListSection.png");
 }
