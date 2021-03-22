@@ -1,0 +1,56 @@
+.cim-account-details {
+	display: flex;
+	padding: 8px 16px 8px 8px;
+}
+
+.cim-account-details--avatar {
+	width: 48px;
+	height: 48px;
+	position: relative;
+
+	img {
+		width: 48px;
+		height: 48px;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+
+	.material-icons {
+		font-size: 48px;
+		opacity: 0.2;
+
+		/* hides icon behind <img> */
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+}
+
+.cim-account-details--info {
+	flex: 1;
+	width: calc(100% - 56px);
+	padding-right: 16px;
+}
+
+.cim-account-details--info-name,
+.cim-account-details--info-email {
+	width: 100%;
+}
+
+.cim-account-details--info-name {
+	margin-left: 16px;
+	font-weight: 500;
+	letter-spacing: 0;
+}
+
+.cim-account-details--info-email {
+	margin-left: 16px;
+	padding-bottom: 8px;
+	color: var(--mdc-theme-text-secondary-on-light);
+	border-bottom: 1px solid var(--divider-color);
+}
+
+.cim-account-details--info-action {
+	padding-left: 8px;
+}
